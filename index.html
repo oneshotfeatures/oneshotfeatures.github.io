@@ -1,14 +1,73 @@
-<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>
+  body {
+    padding: 100px;
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #121212;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+ figure {
+    display: inline-block;
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    text-align: center;
+}
+</style>
+<title>Transformers for One-Shot Visual Imitation</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+</head>
 <body>
 
-<h1>Dynamics Regularized Features for One Shot Imitation</h1>
-<h2> Authors Omitted for Review. Do not distribute.</h2>
+<h1 style="font-size:50px" align="center">Transformers for One-Shot Visual Imitation</h1>
+<table align="center">
+    <tr>
+      <td align="center" width="200px" style="padding:0px">
+        <center>
+          <span style="font-size:20px"><a href="https://sudeepdasari.github.io/">Sudeep Dasari</a></span>
+        </center>
+      </td>
 
-<p><b>Abstract:</b> Humans are able to seamlessly visually imitate others, by inferring their intentions and using past experience to achieve the same end goal. In other words, we can parse complex semantic knowledge from raw video and efficiently translate that into concrete motor control. Is it possible to give a robot this same capability? Prior research in robot imitation learning has created agents which can acquire diverse skills from expert human operators. However, expanding these techniques to work with a single positive example during test time is still an open challenge. Apart from control, the difficulty stems from mismatches between the demonstrator and robot domains. For example, objects may be placed in different locations (e.g. kitchen layouts are different in every house). Additionally, the demonstration may come from an agent with different morphology and physical appearance (e.g. human), so one-to-one action correspondences are not available. This paper investigates techniques which allow robots to partially bridge these domain gaps, using their past experience. A neural network is trained to mimic ground truth robot actions given context video from another agent, and must generalize to unseen task instances when prompted with new videos during test time. We hypothesize that our policy representations must be both context driven and dynamics aware in order to perform these tasks. These assumptions are baked into the neural network using an attention mechanism and a self-supervised inverse dynamics loss. Finally, we experimentally determine that our method accomplishes a $\sim 2$x improvement in terms of task success rate over prior baselines in a suite of one-shot manipulation tasks.</p>
+      <td align="center" width="200px" style="padding:0px">
+        <center>
+          <span style="font-size:20px"><a href="http://www.cs.cmu.edu/~abhinavg/">Abhinav Gupta</a></span>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <table align="center" width="700px">
+    <tr>
+      <td align="center" width="200px" padding="0px">
+        <center>
+          <span style="font-size:20px">Carnegie Mellon University</span>
+        </center>
+      </td>
+    </tr>
+  </table>
 
-<p> <a href="https://drive.google.com/file/d/15G8v9REEfNWknRrYtMMa6H841ZBxpomH/view?usp=sharing"> Link to Code (Will be published as GitHub after review. Do not distribute) </a> </p>
-<p> <a href="https://drive.google.com/file/d/1bVp6hm6HTr7xjkXV7LBQoh3HJO-MY9SQ/view?usp=sharing"> Link to Supplement Video </a></p>
+  <table align="center" width="200px">
+    <tr>
+      <td align="center"><center><span style="font-size:22px"><a href="paper.pdf">[Paper]</a></span></center></td>
+      <td align="center"><center><span style="font-size:22px"><a href="https://github.com/SudeepDasari/one_shot_transformers">[Code]</a></span></center></td>
+    </tr><tr>
+  </tr></table>
+
+  <!-- <center><iframe width="768" height="432" src="https://www.youtube.com/embed/DMiW5hwsoeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br></center> -->
+
+<p> Humans are able to seamlessly visually imitate others, by inferring their intentions and using past experience to achieve the same end goal. In other words, we can parse complex semantic knowledge from raw video and efficiently translate that into concrete motor control. Is it possible to give a robot this same capability? Prior research in robot imitation learning has created agents which can acquire diverse skills from expert human operators. However, expanding these techniques to work with a single positive example during test time is still an open challenge. Apart from control, the difficulty stems from mismatches between the demonstrator and robot domains. For example, objects may be placed in different locations (e.g. kitchen layouts are different in every house). Additionally, the demonstration may come from an agent with different morphology and physical appearance (e.g. human), so one-to-one action correspondences are not available. This paper investigates techniques which allow robots to partially bridge these domain gaps, using their past experience. A neural network is trained to mimic ground truth robot actions given context video from another agent, and must generalize to unseen task instances when prompted with new videos during test time. We hypothesize that our policy representations must be both context driven and dynamics aware in order to perform these tasks. These assumptions are baked into the neural network using the Transformers attention mechanism and a self-supervised inverse dynamics loss. Finally, we experimentally determine that our method accomplishes a $\sim 2$x improvement in terms of task success rate over prior baselines in a suite of one-shot manipulation tasks.</p>
+
 
 </body>
 </html> 
